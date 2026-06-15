@@ -1,0 +1,18 @@
+package com.sb.SpringBootJune2026.withstrategypattern.serviceimpl;
+
+import com.sb.SpringBootJune2026.withstrategypattern.service.RecommendationStrategy;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
+
+
+@Component
+public class AIRecommendationStrategy implements RecommendationStrategy {
+
+    @Override
+    public List<String> recommend(String user) {
+        return List.of("AI Suggested Movie 1", "AI Suggested Movie 2");
+    }
+
+
+}
